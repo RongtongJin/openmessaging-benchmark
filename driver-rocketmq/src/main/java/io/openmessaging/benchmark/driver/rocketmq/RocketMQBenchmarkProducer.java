@@ -56,7 +56,7 @@ public class RocketMQBenchmarkProducer implements BenchmarkProducer {
                 public void onException(final Throwable e) {
                     future.completeExceptionally(e);
                 }
-            },30000);
+            },300000);
         } catch (Exception e) {
             future.completeExceptionally(e);
         }
